@@ -124,7 +124,7 @@ Item {
         id: torRouteSwitchRect
         anchors.left: torSwitchRect.right
         anchors.top: nodeTorScreen.top
-        anchors.leftMargin: 25
+        anchors.leftMargin: 30
         //anchors.topMargin: NodoSystem.nodoTopMargin
         height: NodoSystem.nodoItemHeight
 
@@ -165,7 +165,7 @@ Item {
         anchors.left: nodeTorScreen.left
         anchors.top: torOnionAddressField.bottom
         anchors.topMargin: NodoSystem.nodoTopMargin
-        width: infoFieldWidth
+        width: labelSize + 150
         height: NodoSystem.nodoItemHeight
         itemSize: labelSize
         itemText: systemMessages.messages[NodoMessages.Message.Port] //qstr("Port")
@@ -175,9 +175,10 @@ Item {
     Rectangle {
         id: qrCodeRect
         anchors.right: nodeTorScreen.right
-        anchors.top: nodeTorScreen.top
-        anchors.topMargin: ((NodoSystem.nodoItemHeight + NodoSystem.nodoTopMargin)*3)
+        anchors.bottom: nodeTorScreen.bottom
+        //anchors.topMargin: ((NodoSystem.nodoItemHeight + NodoSystem.nodoTopMargin)*3)
         anchors.rightMargin: 10
+        anchors.bottomMargin: 10
         color: "black"
         width: 512
         height: 512
