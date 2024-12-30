@@ -44,7 +44,7 @@ Rectangle {
                 textFormat: Text.RichText
                 color: nodoControl.appTheme ? NodoSystem.highlightedColorNightModeOn : NodoSystem.highlightedColorNightModeOff
                 font.family: NodoSystem.fontInter.name
-                font.pixelSize: 92
+                font.pixelSize: 96
                 wrapMode: Text.WordWrap
             }
 
@@ -75,7 +75,7 @@ Rectangle {
                     text: channelStr
                     color: nodoControl.appTheme ? NodoSystem.highlightedColorNightModeOn : NodoSystem.highlightedColorNightModeOff
                     font.family: NodoSystem.fontInter.name
-                    font.pixelSize: 42
+                    font.pixelSize: 44
                 }
 
                 Label {
@@ -96,7 +96,7 @@ Rectangle {
                 id: feedBody
                 anchors.left: middleSection.left
                 anchors.top: middleSection.bottom
-                anchors.topMargin: NodoSystem.subMenuTopMargin + 80//100
+                anchors.topMargin: NodoSystem.subMenuTopMargin + 82//100
                 width: root.width - 2*feedBody.x
                 wrapMode: Text.WordWrap
                 textFormat: Text.RichText
