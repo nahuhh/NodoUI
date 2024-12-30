@@ -44,7 +44,7 @@ Rectangle {
                 textFormat: Text.RichText
                 color: nodoControl.appTheme ? NodoSystem.highlightedColorNightModeOn : NodoSystem.highlightedColorNightModeOff
                 font.family: NodoSystem.fontInter.name
-                font.pixelSize: 100
+                font.pixelSize: 92
                 wrapMode: Text.WordWrap
             }
 
@@ -62,8 +62,7 @@ Rectangle {
                     text: headerAuthStr
                     color: nodoControl.appTheme ? NodoSystem.dataFieldTextColorNightModeOn : NodoSystem.dataFieldTextColorNightModeOff
                     font.family: NodoSystem.fontInter.name
-                    //font.pixelSize: 38
-                    font.pixelSize: NodoSystem.textFontSize
+                    font.pixelSize: 42
                 }
 
                 Label {
@@ -76,7 +75,7 @@ Rectangle {
                     text: channelStr
                     color: nodoControl.appTheme ? NodoSystem.highlightedColorNightModeOn : NodoSystem.highlightedColorNightModeOff
                     font.family: NodoSystem.fontInter.name
-                    font.pixelSize: NodoSystem.textFontSize
+                    font.pixelSize: 42
                 }
 
                 Label {
@@ -89,7 +88,7 @@ Rectangle {
                     text: dataTimestampStr
                     color: nodoControl.appTheme ? NodoSystem.dataFieldTextColorNightModeOn : NodoSystem.dataFieldTextColorNightModeOff
                     font.family: NodoSystem.fontInter.name
-                    font.pixelSize: NodoSystem.textFontSize
+                    font.pixelSize: 42
                 }
             }
 
@@ -103,7 +102,6 @@ Rectangle {
                 textFormat: Text.RichText
                 readOnly: true
                 selectByMouse: false
-                selectionEnabled: false
             }
         }
     }
