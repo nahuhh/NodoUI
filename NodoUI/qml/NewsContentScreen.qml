@@ -63,6 +63,7 @@ Rectangle {
                     color: nodoControl.appTheme ? NodoSystem.dataFieldTextColorNightModeOn : NodoSystem.dataFieldTextColorNightModeOff
                     font.family: NodoSystem.fontInter.name
                     //font.pixelSize: 38
+                    font.pixelSize: NodoSystem.textFontSize
                 }
 
                 Label {
