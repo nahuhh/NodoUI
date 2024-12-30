@@ -73,9 +73,9 @@ Rectangle {
                     width: feedChannel.paintedWidth
                     height: 22
                     text: channelStr
-                    color: nodoControl.appTheme ? NodoSystem.dataFieldTextColorNightModeOn : NodoSystem.dataFieldTextColorNightModeOff
+                    color: nodoControl.appTheme ? NodoSystem.highlightedColorNightModeOn : NodoSystem.highlightedColorNightModeOff
                     font.family: NodoSystem.fontInter.name
-                    font.pixelSize: 38
+                    font.pixelSize: NodoSystem.textFontSize
                 }
 
                 Label {
@@ -88,7 +88,7 @@ Rectangle {
                     text: dataTimestampStr
                     color: nodoControl.appTheme ? NodoSystem.dataFieldTextColorNightModeOn : NodoSystem.dataFieldTextColorNightModeOff
                     font.family: NodoSystem.fontInter.name
-                    font.pixelSize: 38
+                    font.pixelSize: NodoSystem.textFontSize
                 }
             }
 
@@ -102,6 +102,7 @@ Rectangle {
                 textFormat: Text.RichText
                 readOnly: true
                 selectByMouse: false
+                selectionEnabled: false
             }
         }
     }
@@ -138,4 +139,3 @@ Rectangle {
         feedBody.text = dataTextStr
     }
 }
-
