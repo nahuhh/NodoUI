@@ -19,8 +19,8 @@ CheckBox {
     indicator: Text {
         width: checkBox.width
         height: checkBox.height
-        x: 4
-        y: -8
+        x: 6
+        y: -12
         text: "\u2713"
         font.family: NodoSystem.fontInter.name
         font.pixelSize: checkBox.width
